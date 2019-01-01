@@ -1,10 +1,7 @@
-html {
-  font-size: $base-font-size;
-  height: 100%;
-}
-
 body {
-  height: 100%;
+  font-family: 'Roboto', 'Arial', 'Tahoma', 'Times New Roman', sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,6 +55,7 @@ button {
 
 .container {
   margin: 0 auto;
-  max-width: $content-size;
-  width: 100%;
+  max-width: $max-width;
+  padding-left: 15px;
+  padding-right: 15px;
 }

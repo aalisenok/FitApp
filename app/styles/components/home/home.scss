@@ -1,0 +1,26 @@
+.home {
+  background: $bg-color url("../img/content/bg-home.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  &__icon {
+    width: 111px;
+    height: 111px;
+    box-shadow: 0 0 60px rgba(48, 60, 17, 0.15);
+    border-radius: 25px;
+}
+  &__img {
+    width: 30%;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.leftcol {
+  width: 60%;
+}

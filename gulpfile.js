@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const scss = require('gulp-sass');
 const plumber = require('gulp-plumber');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
@@ -23,7 +23,7 @@ gulp.task('styles', () => {
     return gulp.src('app/styles/main.scss')
         .pipe(plumber())
         .pipe(sourceMaps.init())
-        .pipe(sass())
+        .pipe(scss())
         .pipe(autoprefixer({
             browsers: ['last 2 version']
         }))
@@ -113,6 +113,6 @@ gulp.task('app', gulp.series(
 
 gulp.task('build', gulp.series(
     'clean',
-    gulp.parallel('html', 'styles', 'js', 'js:libs', 'img', 'svg', 'svg:copy'),
+    gulp.parallel('html', 'styles', 'js', 'js:libs', 'fonts', 'img', 'svg', 'svg:copy'),
     gulp.parallel('watch', 'serve')
 ));
