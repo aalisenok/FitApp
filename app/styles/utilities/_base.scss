@@ -1,7 +1,10 @@
 body {
-  font-family: 'Roboto', 'Arial', 'Tahoma', 'Times New Roman', sans-serif;
+  font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+  color: $white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,4 +61,10 @@ button {
   max-width: $max-width;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

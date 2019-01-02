@@ -1,9 +1,10 @@
 // Colors
 $bg-color: #2ecc71;
+$white: #f4f4f4;
+$gray: #5a5a5a;
+$green: #2ecc71;
 
 // Sizes
-$font-size: 1.125rem;
-$line-height: 1.7;
 $max-width: 1170px;
 
 $breakpoints: (
@@ -17,6 +18,9 @@ $breakpoints: (
         "desktop-wide": 1440px
 );
 
-
-
 // Fonts
+$font-family: 'Roboto', 'Arial', 'Tahoma', 'Times New Roman', sans-serif;
+$font-size: 1.125rem;
+$line-height: 1.7;
+$font-weight: 400;
+$letter-spacing: 0.7px;

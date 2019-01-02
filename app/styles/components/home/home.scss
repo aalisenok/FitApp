@@ -3,24 +3,49 @@
   background-size: cover;
   height: 100vh;
   &__content {
-    display: flex;
-    justify-content: space-between;
-
+    position: relative;
   }
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: -139px;
+  }
+}
+
+.intro-text {
+  width: 56%;
   &__icon {
     width: 111px;
     height: 111px;
     box-shadow: 0 0 60px rgba(48, 60, 17, 0.15);
     border-radius: 25px;
-}
-  &__img {
-    width: 30%;
+    margin-bottom: 60px;
+  }
+  &__title {
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 2.56px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+  }
+  &__desc {
+    font-weight: 300;
+    letter-spacing: 0.72px;
+    margin-bottom: 55px;
+  }
+  &__download {
+    display: flex;
   }
 }
-img {
-  max-width: 100%;
-  height: auto;
+
+.download {
+  &__app-store {
+    margin-right: 30px;
+  }
 }
-.leftcol {
-  width: 60%;
+
+.bold-text {
+  font-weight: 700;
+  letter-spacing: 2.56px;
 }
+
