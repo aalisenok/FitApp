@@ -1,5 +1,5 @@
 .home {
-  background: $bg-color url("../img/content/bg-home.jpg") no-repeat;
+  background: $bg-color url("../img/content/bg-home.jpg") center no-repeat;
   background-size: cover;
   height: 100vh;
   &__content {
@@ -32,9 +32,6 @@
     font-weight: 300;
     letter-spacing: 0.72px;
     margin-bottom: 55px;
-  }
-  &__download {
-    display: flex;
   }
 }
 
