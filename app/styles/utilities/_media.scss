@@ -1,0 +1,19 @@
+// Large devices (desktops, less than 1200px)
+@media (max-width: $desktops) {
+  /* CSS for widths from 992px to 1199px */
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: $tablets) {
+  /* CSS дCSS for widths from от 768px to 991px */
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: $landscape-phones) {
+  /* CSS for widths from 576px to 767px */
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: $phones) {
+  /* CSS for widths from 575px (inclusive) */
+}

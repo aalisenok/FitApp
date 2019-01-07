@@ -3,17 +3,14 @@
   background-size: cover;
   height: 100vh;
   &__content {
-    position: relative;
-  }
-  &__img {
-    position: absolute;
-    right: 0;
-    bottom: -139px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 .intro-text {
-  width: 56%;
+  flex: 0 0 56%;
   &__icon {
     width: 111px;
     height: 111px;

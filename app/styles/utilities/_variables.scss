@@ -1,27 +1,27 @@
-// Colors
+// ==================== >>> FONTS <<< ==================== //
+
+$font-family: 'Roboto', 'Arial', 'Tahoma', 'Times New Roman', sans-serif;
+$font-size: 1.125rem;
+$line-height: 2rem;
+$font-weight: 300;
+$letter-spacing: 0.7px;
+
+// ==================== >>> COLORS <<< ==================== //
+
 $bg-color: #2ecc71;
 $white: #fff;
 $dark-gray: #5a5a5a;
-$light-gray: #e7e7e7;;
+$light-gray: #e7e7e7;
 $green: #2ecc71;
 
-// Sizes
+// ==================== >>> SIZES <<< ==================== //
+
 $max-width: 1170px;
 
-$breakpoints: (
-        "phone" : 400px,
-        "phone-wide" : 480px,
-        "phablet" : 560px,
-        "tablet-small": 640px,
-        "tablet" : 768px,
-        "tablet-wide" : 1024px,
-        "desktop" : 1248px,
-        "desktop-wide": 1440px
-);
+// ==================== >>> MEDIA-QUERIES <<< ==================== //
 
-// Fonts
-$font-family: 'Roboto', 'Arial', 'Tahoma', 'Times New Roman', sans-serif;
-$font-size: 1.125rem;
-$line-height: 1.7;
-$font-weight: 400;
-$letter-spacing: 0.7px;
+$desktops: 1199.98px;
+$tablets: 991.98px;
+$landscape-phones: 767.98px;
+$phones: 575.98px;
+
