@@ -1,17 +1,14 @@
-// blocks
-
-@import "header/header";
-
-// footer
-
-@import "footer/footer";
-
-// buttons
-
-@import "button/button";
-
 // sections
 
 @import "home/home";
 @import "counter-app/counter-app";
 @import "plan-your-diet/plan-your-diet";
+@import "meal-time/meal-time";
+
+// blocks
+
+@import "header/header";
+@import "footer/footer";
+@import "products/products";
+@import "button/button";
+
