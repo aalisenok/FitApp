@@ -6,7 +6,7 @@
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: $tablets) {
-  /* CSS дCSS for widths from от 768px to 991px */
+  /* CSS for widths from от 768px to 991px */
   .nav {
     &--opened .menu {
       display: flex;
@@ -31,6 +31,23 @@
         }
       }
     }
+  }
+  .hero {
+    align-items: center;
+    &__content {
+      justify-content: center;
+    }
+    &__img {
+      display: none;
+    }
+  }
+
+  .intro-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
   }
   .menu {
     display: none;
