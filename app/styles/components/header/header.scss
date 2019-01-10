@@ -1,9 +1,15 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 1.75rem;
-  margin-bottom: 3.56rem;
+  position: absolute;
+  top: 1.75rem;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
 }
 
 .logo {
@@ -21,6 +27,11 @@
     margin-right: 3.25rem;
     color: $white;
     font-weight: 400;
+    position: relative;
+    &:hover {
+      padding-bottom: 5px;
+      border-bottom: 2px solid $white;
+    }
   }
   &__item:last-child {
     margin-right: 0;

@@ -1,11 +1,46 @@
 // Large devices (desktops, less than 1200px)
 @media (max-width: $desktops) {
   /* CSS for widths from 992px to 1199px */
+
 }
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: $tablets) {
   /* CSS дCSS for widths from от 768px to 991px */
+  .nav {
+    &--opened .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -1.75rem;
+      left: -15px;
+      right: -15px;
+      background: $green;
+      &__item {
+        margin-bottom: 1.25rem;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+        &:first-child {
+          margin-top: 1.25rem;
+        }
+      }
+    }
+  }
+  .menu {
+    display: none;
+    &__btn {
+      margin-bottom: 1.25rem;
+    }
+  }
+  .burger {
+    display: block;
+  }
 }
 
 // Small devices (landscape phones, less than 768px)

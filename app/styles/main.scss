@@ -5,7 +5,11 @@
 @import "utilities/mixins";
 @import "utilities/variables";
 @import "utilities/base";
-@import "utilities/media";
 
 // components
+
 @import "components/components";
+
+// media
+
+@import "utilities/media";

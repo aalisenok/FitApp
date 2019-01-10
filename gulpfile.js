@@ -96,7 +96,7 @@ gulp.task('watch', () => {
     gulp.watch("app/styles/**/*.scss", gulp.series("styles"));
     gulp.watch("app/**/*.html", gulp.series("html"));
     gulp.watch("app/js/**/*.js", gulp.series("js"));
-    gulp.watch("app/img/**/*.{png,jpg,jpeg,gif", gulp.series("img"));
+    gulp.watch("app/img/**/*.{png,jpg,jpeg,gif}", gulp.series("img"));
     gulp.watch("app/img/**/*.{svg}", gulp.series("svg"));
 });
 
