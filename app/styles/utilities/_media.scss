@@ -68,10 +68,40 @@
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: $landscape-phones) {
-  /* CSS for widths from 576px to 767px */
+  /* CSS for widths from 480px to 767px */
 }
 
-// Extra small devices (portrait phones, less than 576px)
+// Extra small devices (portrait phones, less than 480px)
 @media (max-width: $phones) {
-  /* CSS for widths from 575px (inclusive) */
+  /* CSS for widths from 480px (inclusive) */
+  .header {
+    top: 1rem;
+  }
+  .nav {
+    &--opened .menu {
+      top: 0;
+    }
+  }
+  .menu__btn {
+    top: 0;
+  }
+  .intro-text {
+    margin-top: 4rem;
+    &__icon {
+      display: none;
+    }
+    &__title {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+    &__description {
+      margin-bottom: 1rem;
+    }
+  }
+  .download {
+    display: flex;
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+
 }
