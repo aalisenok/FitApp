@@ -200,7 +200,15 @@
   }
   .plan-your-diet {
     padding-top: 3rem;
+    &__description {
+      margin-bottom: 3rem;
+    }
   }
+  .footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .title {
     font-size: 2rem;
     line-height: 3rem;

@@ -1,5 +1,6 @@
 .plan-your-diet {
-  background: $bg-color-gray;
+  background: $bg-color-gray url("../img/content/bg-plan-your-diet.jpg") center no-repeat;
+  background-size: cover;
   padding-top: 6.875rem;
   &__title {
     text-align: center;

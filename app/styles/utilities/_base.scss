@@ -83,6 +83,10 @@ img {
   &--green {
     color: $green;
   }
+  &--bold {
+    font-weight: 700;
+    letter-spacing: 0.09rem;
+  }
 }
 
 .description {
