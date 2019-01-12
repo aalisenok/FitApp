@@ -3,17 +3,16 @@
   padding-bottom: 13.5rem;
   &__content {
     display: flex;
-    justify-content: space-between;
   }
 }
 
 .ellipse {
   position: relative;
-  margin-right: 9rem;
+  margin-right: 10rem;
   &__img {
     position: absolute;
     left: -2.5rem;
-    top: -25%;
+    top: -7.5rem;
     z-index: 1;
   }
 }
@@ -25,15 +24,24 @@
   border-radius: 50%;
   position: relative;
   left: 2.8rem;
-  &__item {
+  .slick-list, .slick-track {
+    overflow: visible !important;
+    position: static !important;
+    transform: none !important;
+    width: auto !important;
+  }
+  &__item.slick-slide {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 4rem;
-    height: 4rem;
+    width: 4rem !important;
+    height: 4rem !important;
     background-color: $light-gray;
     border-radius: 50%;
     border: 5px solid $white;
+    outline: none;
+  }
+  &__item {
     &:hover {
       background: $green;
       box-shadow: 0 0 60px rgba(15, 65, 36, 0.15);
@@ -42,28 +50,28 @@
     }
     &--notification {
       position: absolute;
-      right: 24%;
-      top: -3%;
+      right: 7rem;
+      top: -1rem;
     }
     &--calendar {
       position: absolute;
-      right: 2%;
-      top: 13%;
+      top: 4rem;
+      right: 1rem;
     }
     &--growth {
       position: absolute;
-      right: -7%;
-      top: 43%;
+      right: -2rem;
+      top: 13rem;
     }
     &--favorite {
       position: absolute;
-      right: 2%;
-      bottom: 13%;
+      right: 1rem;
+      bottom: 4rem;
     }
     &--interface {
       position: absolute;
-      right: 24%;
-      bottom: -3%;
+      right: 7rem;
+      bottom: -1rem;
     }
   }
 }
@@ -72,4 +80,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 1 1 50%;
+  max-width: 50%;
+  overflow: hidden;
+  &__item {
+    outline: none;
+  }
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
 }

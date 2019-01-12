@@ -20,3 +20,19 @@ burger.addEventListener('click', () => {
 $(document).ready(function () {
     svg4everybody({});
 });
+
+
+// slick-carousel
+
+$('.slider-for').slick({
+    slidesToShow: 1,
+    arrows: false,
+    asNavFor: '.slider-nav',
+    autoplay: true
+});
+$('.slider-nav').slick({
+    slidesToShow: 5,
+    asNavFor: '.slider-for',
+    centerMode: true,
+    focusOnSelect: true
+});

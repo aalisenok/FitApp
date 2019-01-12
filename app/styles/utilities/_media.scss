@@ -7,9 +7,6 @@
 // Medium devices (tablets, less than 992px)
 @media (max-width: $tablets) {
   /* CSS for widths from от 768px to 991px */
-  .header {
-    top: 2rem;
-  }
   .nav {
     &--opened .menu {
       display: flex;
@@ -41,7 +38,7 @@
     display: none;
     &__btn {
       position: absolute;
-      left: 15px;
+      left: 1rem;
       top: 4rem;
     }
   }
@@ -64,19 +61,69 @@
     text-align: center;
     margin-top: 0;
   }
+  .counter-app {
+    padding-bottom: 3rem;
+    &__content {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .ellipse {
+    margin-right: 0;
+    margin-bottom: 10rem;
+    &__img {
+      left: -5.3rem;
+    }
+  }
+  .icon-list {
+    left: 0;
+  }
+  .text-list {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: $landscape-phones) {
   /* CSS for widths from 480px to 767px */
+  .ellipse {
+    &__img {
+      max-width: 75%;
+    }
+  }
+  .icon-list {
+    width: 24.2rem;
+    height: 24.2rem;
+    &__item {
+      &--notification {
+        right: 5rem;
+        top: -1rem;
+      }
+      &--calendar {
+        top: 3rem;
+        right: 0.5rem;
+      }
+      &--growth {
+        right: -2rem;
+        top: 10rem;
+      }
+      &--favorite {
+        right: 0.5rem;
+        bottom: 3rem;
+      }
+      &--interface {
+        right: 5rem;
+        bottom: -1rem;
+      }
+    }
+  }
 }
 
 // Extra small devices (portrait phones, less than 480px)
 @media (max-width: $phones) {
   /* CSS for widths from 480px (inclusive) */
-  .header {
-    top: 1rem;
-  }
   .nav {
     &--opened .menu {
       top: 0;
@@ -102,6 +149,58 @@
     display: flex;
     flex: 0 0 80%;
     max-width: 80%;
+  }
+  .counter-app {
+    padding-top: 6.3rem;
+  }
+  .ellipse {
+    margin-bottom: 5rem;
+    &__img {
+      top: -4.5rem;
+      left: -4.3rem;
+    }
+  }
+  .icon-list {
+    width: 15.2rem;
+    height: 15.2rem;
+    &__item {
+      &:hover {
+        transform: scale(1.1);
+      }
+      &--notification {
+        right: 4rem;
+        top: -1rem;
+      }
+      &--calendar {
+        top: 1.5rem;
+        right: 0;
+      }
+      &--growth {
+        right: -1.5rem;
+        top: 6rem;
+      }
+      &--favorite {
+        right: 0;
+        bottom: 1.5rem;
+      }
+      &--interface {
+        right: 4rem;
+        bottom: -1rem;
+      }
+    }
+    &__item.slick-slide {
+      width: 3rem !important;
+      height: 3rem !important;
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+  }
+  .title {
+    font-size: 2rem;
+    line-height: 3rem;
   }
 
 }

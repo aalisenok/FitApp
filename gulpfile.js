@@ -40,7 +40,8 @@ gulp.task('js', () => {
 gulp.task('js:libs', () => {
     return gulp.src([
         'node_modules/svg4everybody/dist/svg4everybody.min.js',
-        'node_modules/jquery/dist/jquery.min.js'
+        'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/slick-carousel/slick/slick.min.js'
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
