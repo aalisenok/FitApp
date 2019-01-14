@@ -83,6 +83,30 @@
     max-width: 100%;
     text-align: center;
   }
+  .meal-time {
+    &__content {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__text {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    &__products {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  .product {
+    &__img {
+      margin-bottom: 1rem;
+    }
+    &__info {
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -117,6 +141,16 @@
         right: 5rem;
         bottom: -1rem;
       }
+    }
+  }
+  .product {
+    flex-direction: column;
+    text-align: center;
+    &__img {
+      max-width: 30%;
+    }
+    &__time-info {
+      align-items: normal;
     }
   }
 }
@@ -202,6 +236,14 @@
     padding-top: 3rem;
     &__description {
       margin-bottom: 3rem;
+    }
+  }
+  .meal-time {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    &__products {
+      flex: 0 0 70%;
+      max-width: 70%;
     }
   }
   .footer {

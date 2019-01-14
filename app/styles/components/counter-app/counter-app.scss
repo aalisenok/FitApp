@@ -42,6 +42,7 @@
     outline: none;
   }
   &__item {
+    transition: 0.5s ease;
     &:hover {
       background: $green;
       box-shadow: 0 0 60px rgba(15, 65, 36, 0.15);
